@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentOne">
+
+    <fragment
+        android:id="@+id/fragmentOne"
+        android:name="com.example.navegacionfinal.fragmentOne"
+        android:label="fragment_one"
+        tools:layout="@layout/fragment_one" >
+        <action
+            android:id="@+id/action_fragmentOne_to_fragmentTwo"
+            app:destination="@id/fragmentTwo"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTwo"
+        android:name="com.example.navegacionfinal.fragmentTwo"
+        android:label="fragment_two"
+        tools:layout="@layout/fragment_two" >
+        <action
+            android:id="@+id/action_fragmentTwo_to_fragmentThree"
+            app:destination="@id/fragmentThree"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentThree"
+        android:name="com.example.navegacionfinal.fragmentThree"
+        android:label="fragment_three"
+        tools:layout="@layout/fragment_three" >
+        <action
+            android:id="@+id/action_fragmentThree_to_fragmentFour"
+            app:destination="@id/fragmentFour"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFour"
+        android:name="com.example.navegacionfinal.fragmentFour"
+        android:label="fragment_four"
+        tools:layout="@layout/fragment_four" >
+        <action
+            android:id="@+id/action_fragmentFour_to_fragmentFive2"
+            app:destination="@id/fragmentFive"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFive"
+        android:name="com.example.navegacionfinal.fragmentFive"
+        android:label="fragment_five"
+        tools:layout="@layout/fragment_five" >
+        <action
+            android:id="@+id/action_fragmentFive_to_fragmentSix"
+            app:destination="@id/fragmentSix"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSix"
+        android:name="com.example.navegacionfinal.fragmentSix"
+        android:label="fragment_six"
+        tools:layout="@layout/fragment_six" >
+        <action
+            android:id="@+id/action_fragmentSix_to_fragmentOne"
+            app:destination="@id/fragmentOne" />
+    </fragment>
+</navigation>
