@@ -25,10 +25,13 @@ public class fragmentSix extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button btnFragment6 = view.findViewById(R.id.buttonSixNav);
-
+        Button btnFragment6 = view.findViewById(R.id.btn_enviar_dinero);
+        Button btnFragment6b = view.findViewById(R.id.btn_ingresar_dinero);
         btnFragment6.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_fragmentSix_to_fragmentOne);
+            Navigation.findNavController(v).navigate(R.id.action_fragmentSix_to_fragment_seven);
+        });
+        btnFragment6b.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_fragmentSix_to_fragment_seven);
         });
     }
 }

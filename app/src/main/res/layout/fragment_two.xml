@@ -37,42 +37,23 @@
         app:layout_constraintVertical_bias="0.603" />
 
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonTwoNav"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:gravity="center"
-        android:text="Next"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.946"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.939" />
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_crea_cuenta"
         android:layout_width="350dp"
         android:layout_height="55dp"
-        android:textColor="@color/white"
-        android:text="Crear cuenta nueva"
-        android:gravity="center"
-        app:cornerRadius="10dp"
-        android:fontFamily="@font/jua"
-        android:textSize="16sp"
-        android:backgroundTint="@color/alka_wallet"
-
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
+        android:backgroundTint="@color/alka_wallet"
+        android:fontFamily="@font/jua"
+        android:text="Crear cuenta nueva"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.86" />
+        app:layout_constraintVertical_bias="0.907" />
 
     <TextView
         android:id="@+id/text2"
@@ -85,9 +66,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.934" />
+        app:layout_constraintVertical_bias="0.956" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

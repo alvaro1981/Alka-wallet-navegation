@@ -25,7 +25,7 @@ public class fragmentTwo extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button btnFragment2 = view.findViewById(R.id.buttonTwoNav);
+        Button btnFragment2 = view.findViewById(R.id.btn_crea_cuenta);
 
         btnFragment2.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_fragmentTwo_to_fragmentThree);

@@ -12,22 +12,25 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-public class fragmentThree extends Fragment {
+
+public class fragment_seven extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_three, container, false);
+        return inflater.inflate(R.layout.fragment_seven, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button btnFragment3 = view.findViewById(R.id.btn_login_page);
 
-        btnFragment3.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_fragmentThree_to_fragmentFour);
+        Button btnFragment7 = view.findViewById(R.id.btn_ingresar_dinero);
+
+        btnFragment7.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_fragment_seven_to_fragment_eight);
         });
+
     }
 }

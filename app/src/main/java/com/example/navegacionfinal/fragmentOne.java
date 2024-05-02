@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 
 public class fragmentOne extends Fragment {
@@ -25,9 +26,9 @@ public class fragmentOne extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button btnFragment1 = view.findViewById(R.id.buttonOneNav);
-
-        btnFragment1.setOnClickListener(v -> {
+    //    Button btnFragment1 = view.findViewById(R.id.buttonOneNav);
+        ImageView imageViewLogo = view.findViewById(R.id.logo);
+        imageViewLogo.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_fragmentOne_to_fragmentTwo);
         });
 

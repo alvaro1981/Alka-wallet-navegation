@@ -5,4 +5,5 @@
         <item name="cornerSize">50%</item>
         <item name="android:fillColor">@color/alka_wallet</item>
     </style>
+
 </resources>

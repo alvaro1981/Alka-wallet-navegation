@@ -22,7 +22,7 @@ public class fragmentFour extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button btnFragment4 = view.findViewById(R.id.buttonFourNav);
+        Button btnFragment4 = view.findViewById(R.id.btn_crea_cta_signup);
 
         btnFragment4.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_fragmentFour_to_fragmentFive2);

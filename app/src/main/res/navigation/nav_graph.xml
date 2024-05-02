@@ -66,7 +66,42 @@
         android:label="fragment_six"
         tools:layout="@layout/fragment_six" >
         <action
-            android:id="@+id/action_fragmentSix_to_fragmentOne"
-            app:destination="@id/fragmentOne" />
+            android:id="@+id/action_fragmentSix_to_fragment_seven"
+            app:destination="@id/fragment_seven"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_eight"
+        android:name="com.example.navegacionfinal.fragment_eight"
+        android:label="fragment_eight"
+        tools:layout="@layout/fragment_eight" >
+        <action
+            android:id="@+id/action_fragment_eight_to_fragment_nine"
+            app:destination="@id/fragment_nine"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_seven"
+        android:name="com.example.navegacionfinal.fragment_seven"
+        android:label="fragment_seven"
+        tools:layout="@layout/fragment_seven" >
+        <action
+            android:id="@+id/action_fragment_seven_to_fragment_eight"
+            app:destination="@id/fragment_eight"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_nine"
+        android:name="com.example.navegacionfinal.fragment_nine"
+        android:label="fragment_nine"
+        tools:layout="@layout/fragment_nine" >
+        <action
+            android:id="@+id/action_fragment_nine_to_fragmentOne"
+            app:destination="@id/fragmentOne"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
     </fragment>
 </navigation>

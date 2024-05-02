@@ -24,9 +24,13 @@ public class fragmentFive extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button btnFragment5 = view.findViewById(R.id.buttonFiveNav);
+        Button btnFragment5 = view.findViewById(R.id.btn_enviar_dinero);
+        Button btnFragment5b = view.findViewById(R.id.btn_ingreso_dinero);
 
         btnFragment5.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_fragmentFive_to_fragmentSix);
+        });
+        btnFragment5b.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_fragmentFive_to_fragmentSix);
         });
     }
